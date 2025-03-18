@@ -1,6 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('content')
+
+<main class="mt-90">
+    <div class="mb-5 pb-lg-5"></div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -66,7 +69,13 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
+                                @if (Route::has('login'))
+                                    <a class="btn btn-link" style="margin-left: 20px;" href="{{ route('login') }}">
+                                        {{ __('back to login?') }}
+                                    </a>
+                                @endif
                             </div>
+                          
                         </div>
                     </form>
                 </div>

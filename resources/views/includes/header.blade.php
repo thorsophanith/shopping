@@ -10,7 +10,7 @@
 </style>
 
 
-<main>
+<main >
 <svg class="d-none">
     <symbol id="icon_nav" viewBox="0 0 25 18">
       <rect width="25" height="2" />
@@ -235,7 +235,7 @@
     </symbol>
   </svg>
 
-  <div class="header-mobile header_sticky">
+  <div class="header-mobile header_sticky pt-3">
     <div class="container d-flex align-items-center">
       <a class="mobile-nav-activator d-block position-relative" href="#">
         <svg class="nav-icon" width="25" height="18" viewBox="0 0 25 18" xmlns="http://www.w3.org/2000/svg">
@@ -245,7 +245,7 @@
       </a>
 
       <div class="logo">
-        <a href="#">
+        <a href="/">
           {{-- <img src="assets/images/logo.png" alt="Uomo" class="logo__image d-block" /> --}}
           <h3> Shopping</h3>
         </a>
@@ -294,10 +294,10 @@
               <a href="{{ route('cart') }}" class="navigation__link">Cart</a>
             </li>
             <li class="navigation__item">
-              <a href="about.html" class="navigation__link">About</a>
+              <a href="{{ route('about') }}" class="navigation__link">About</a>
             </li>
             <li class="navigation__item">
-              <a href="contact.html" class="navigation__link">Contact</a>
+              <a href="{{ route('contact') }}" class="navigation__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -362,11 +362,11 @@
   </div>
 
 
-  <header id="header" class="header header-fullwidth header-transparent-bg">
+  <header id="header" class="header header-fullwidth header-transparent-bg" data-aos="fade-down">
     <div class="container">
       <div class="header-desk header-desk_type_1">
         <div class="logo">
-          <a href="index.html">
+          <a href="/">
             {{-- <img src="#" alt="Uomo" class="logo__image d-block" /> --}}
            <h3> Shopping</h3>
           </a>
@@ -384,10 +384,10 @@
               <a href="{{ route('cart') }}" class="navigation__link" >Cart</a>
             </li>
             <li class="navigation__item">
-              <a href="about.html" class="navigation__link" >About</a>
+              <a href="{{ route('about') }}" class="navigation__link" >About</a>
             </li>
             <li class="navigation__item">
-              <a href="contact.html" class="navigation__link" >Contact</a>
+              <a href="{{ route('contact') }}" class="navigation__link" >Contact</a>
             </li>
           </ul>
         </nav>
@@ -440,21 +440,22 @@
           </div>
 
           <div class="header-tools__item hover-container">
-            <a href="login.html" class="header-tools__item" >
-              <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
+            <a href="#" class="header-tools__item" >
+              <svg class="d-block" width="15" height="20" viewBox="0 0 20 20" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <use href="#icon_user" />
               </svg>
             </a>
           </div>
 
-          <a href="wishlist.html" class="header-tools__item" >
+          <a href="{{ route('wishlist') }}" class="header-tools__item header-tools__cart" >
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="#icon_heart" />
             </svg>
+            <span class="cart-amount d-block position-absolute js-cart-items-count">3</span>
           </a>
 
-          <a href="cart.html" class="header-tools__item header-tools__cart" >
+          <a href="{{ route('cart') }}" class="header-tools__item header-tools__cart" >
             <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <use href="#icon_cart" />

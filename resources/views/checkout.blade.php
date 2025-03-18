@@ -8,7 +8,7 @@
 
 
 <div class="container mt-md-5">
-    <h6 class="pb-5 pt-4"><a href="{{ route('cart') }}" class="navigation__link"><i class="fa-solid fa-arrow-left"></i> Back to Cart</a></h6>
+    <h6 class="pb-5 "><a href="{{ route('cart') }}" class="navigation__link"><i class="fa-solid fa-arrow-left"></i> Back to Cart</a></h6>
 
     <div class="row">
         <!-- Billing Details -->

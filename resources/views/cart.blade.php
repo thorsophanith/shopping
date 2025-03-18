@@ -4,7 +4,7 @@
 
 
 <main class="mt-90">
-    <div class="mb-4 pb-5"></div>
+    <div class="mb-4 pb-lg-5"></div>
 
 
     <div class="cart-wrapper pt-5">

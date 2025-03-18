@@ -1,4 +1,3 @@
-
 let nextButton = document.getElementById("next");
 let prevButton = document.getElementById("prev");
 let carousel = document.querySelector(".carousel");
@@ -43,7 +42,6 @@ backButton.onclick = function () {
 };
 
 // Category
-
 
 // var TrandingSlider = new Swiper(".tranding-slider", {
 //     effect: "coverflow",

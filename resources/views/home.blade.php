@@ -2,11 +2,10 @@
 
 @section('content')
 
-
  <main class="pt-90">
-    <div class="mb-4 pb-4"></div>
+    <div class="pb-lg-4 pb-lg-5"></div>
 <div class="carousel">
-    <div class="list mt-md-5 pt-md-5">
+    <div class="list">
         <div class="item">
             <img src="{{ asset('assets/images/5.png') }}">
             <div class="introduce">

@@ -21,4 +21,8 @@ class ShopController extends Controller
     public function details(){
         return view('cart-detail');
     }
+
+    public function wishlist(){
+        return view('wishlist');
+    }
 }

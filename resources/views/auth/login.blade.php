@@ -1,6 +1,10 @@
-{{-- @extends('layouts.main')
+@extends('layouts.main')
 
 @section('content')
+
+<main class="mt-90">
+    <div class="mb-5 pb-lg-5"></div>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -57,9 +61,9 @@
                                     {{ __('Login') }}
                                 </button>
 
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                @if (Route::has('register'))
+                                    <a class="btn btn-link" href="{{ route('register') }}">
+                                        {{ __('register?') }}
                                     </a>
                                 @endif
                             </div>
@@ -70,4 +74,6 @@
         </div>
     </div>
 </div>
-@endsection --}}
+
+</main>
+@endsection
